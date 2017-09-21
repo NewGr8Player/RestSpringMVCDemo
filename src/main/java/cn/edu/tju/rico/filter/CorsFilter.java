@@ -37,7 +37,6 @@ public class CorsFilter implements Filter {
 	private String allowHeaders;
 	private String exposeHeaders;
 
-	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
 		allowOrigin = filterConfig.getInitParameter("allowOrigin");
 		allowMethods = filterConfig.getInitParameter("allowMethods");
@@ -58,7 +57,6 @@ public class CorsFilter implements Filter {
 	 * @throws ServletException     
 	 * @see javax.servlet.Filter#doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)     
 	 */  
-	@Override
 	public void doFilter(ServletRequest req, ServletResponse res,
 			FilterChain chain) throws IOException, ServletException {
 		HttpServletRequest request = (HttpServletRequest) req;
@@ -92,7 +90,6 @@ public class CorsFilter implements Filter {
 		chain.doFilter(req, res);
 	}
 
-	@Override
 	public void destroy() {
 	}
 }

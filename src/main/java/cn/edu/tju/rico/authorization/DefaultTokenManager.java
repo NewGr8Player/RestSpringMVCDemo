@@ -54,9 +54,7 @@ public class DefaultTokenManager implements TokenManager {
 	 * @param token     
 	 * @see cn.edu.tju.rico.authorization.TokenManager#deleteToken(java.lang.String)     
 	 */  
-	@Override
 	public void deleteToken(String token) {
-		// TODO Auto-generated method stub
 		tokenMap.remove(token);
 	}
 }

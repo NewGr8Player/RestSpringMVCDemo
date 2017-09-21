@@ -1,1 +1,6 @@
-/target
+/RestSpringMVCDemo.iml
+/.settings/
+/.idea/
+/.classpath
+/.project
+/target/
